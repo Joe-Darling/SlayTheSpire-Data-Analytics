@@ -20,6 +20,9 @@ public class RunExtractor {
 
     enum Character{IRONCLAD, SILENT, BOTH}
 
+    /**
+     * Displays the amount of runs in each folder and the total runs
+     */
     public void displayRawRunData(){
         File runDataFolder = new File("rundata");
         File[] users = runDataFolder.listFiles();
@@ -41,6 +44,11 @@ public class RunExtractor {
         System.out.println(overall);
     }
 
+    /**
+     * Returns all runs for the given character
+     * @param character The character to get runs for
+     * @return The list of runs that character has
+     */
     public List<Run> getRuns(Character character){
         File runDataFolder = new File("rundata");
         File[] users = runDataFolder.listFiles();

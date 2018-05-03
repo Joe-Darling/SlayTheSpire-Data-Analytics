@@ -1,10 +1,10 @@
 /**
  * Created by Joe on 5/2/2018.
+ * Data collection class to hold a card/relic and the amount of times it's been seen in a single object.
  */
 public class Item {
 
     private String name;
-    private int copiesThisRun; // Amount of copies of tis item seen in a run
     private int quantity; // Amount of copies of this item seen by all runs
     private int totalGames;
 
@@ -20,10 +20,6 @@ public class Item {
 
     public String getName(){
         return name;
-    }
-
-    public int getCopiesThisRun(){
-        return copiesThisRun;
     }
 
     public int getQuantity(){

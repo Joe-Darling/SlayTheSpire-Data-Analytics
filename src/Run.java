@@ -2,6 +2,8 @@ import java.util.ArrayList;
 
 /**
  * Created by Joe on 4/20/2018.
+ *
+ * Run class that Gson decompiles the json into. Just contains getters.
  */
 public class Run {
     private ArrayList path_per_floor;

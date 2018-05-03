@@ -2,6 +2,7 @@ import java.util.Comparator;
 
 /**
  * Created by Joe on 5/2/2018.
+ * Comparator for item class, sorts by quantity
  */
 public class ItemComparator implements Comparator<Item> {
 

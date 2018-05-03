@@ -3,6 +3,7 @@ import java.util.*;
 
 /**
  * Created by Joe on 4/20/2018.
+ * This class just contains a bunch of functions that can be used on run data to get certain analytics.
  */
 public class DataAnalyzer {
 
@@ -353,7 +354,7 @@ public class DataAnalyzer {
         List<Item> relicAppearances = new ArrayList<>();
         for(Run run : runs){
             List<String> relicsSeen = new ArrayList<>();
-            for(Object cardObj : run.getRelics()){ // Switch this line out to get boss relics
+            for(Object cardObj : run.getRelics()){
                 boolean hasBeenSeen = false;
                 String relic = (String)cardObj;
                 while(relic.contains("+")){ // In case searing blow is like +1000 or some shit
